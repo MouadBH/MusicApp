@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	padding: 0;
+	z-index: 2;
+}
+
+.float-r { float: right; }
+.float-l { float: left; }
+
+div.containerCard {
+    width: 270px;
+    margin: 2%;
+    position: relative;
+    background: #333;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    overflow: hidden;
+    float: left;
+}
+
+div.top {
+	height: 30px;
+	background: #EAEAEA;
+	padding: 7px;
+	z-index: 9999;
+}
+
+div.menu a {
+	display: inline-block;
+	margin: 2px 2px 2px 2px;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+}
+div.menu a:nth-child(1) { background: #2ecc71; }
+div.menu a:nth-child(2) { background: #f1c40f; }
+div.menu a:nth-child(3) { background: #e74c3c; }
+
+div.side-menu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #333;
+	z-index: 98;
+	margin-left: -310px;
+}
+
+div.side-menu-background {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	background: url('http://cdn.postgradproblems.com/wp-content/uploads/2013/08/8c7b216218c104dd0b2cd5a39626351c.jpg') no-repeat 10% 0%;
+	background-size: auto 100%;
+	opacity: .07;
+	z-index: 95;
+}
+
+div.side-menu a.close {
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	font-size: 25px;
+	color: #FFF;
+	z-index: 100;
+}
+
+div.side-menu ul {
+	margin: 25px 0 0 0;
+	z-index: 99 !important;
+	position: relative;
+}
+
+div.side-menu li {
+	color: #AAA;
+	padding: 16px 0 13px 28px;
+	z-index: 99;
+}
+
+div.side-menu li.active {
+	color: #FFF;
+}
+
+div.side-menu li a {
+	color: inherit;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+	z-index: 100;
+}
+
+div.side-menu li a i {
+	margin-right: 7px;
+}
+
+div.overlay-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: .6;
+	top: 0;
+	z-index: -2 !important;
+	filter: blur(4px);
+}
+
+div.overlay-image.the-nights.active {
+	animation: fadeIn 0.8s;
+	background: url('https://upload.wikimedia.org/wikipedia/en/6/64/The-Days-Nights-EP-by-Avicii.jpg') no-repeat 45% 20%;
+    background-size: 200% auto;
+    background-repeat: no-repeat;
+    background-position: 45% 20%;
+}
+
+div.overlay-image.dont-look-down.active {
+	animation: fadeIn 0.8s;
+	background: url('https://i1.sndcdn.com/artworks-000110285449-17viu6-t500x500.jpg') no-repeat 45% 20%;
+	background-size: 200% auto;
+}
+
+div.overlay-image.avalanche.active {
+	animation: fadeIn 0.8s;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/bmth-tts.jpg') no-repeat 45% 20%;
+	background-size: 200% auto;
+}
+
+div.overlay {
+	position: absolute;
+  top: 0;
+  z-index: -1 !important;
+  width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(top,rgba(51,51,51,0.65) 0,rgba(51,51,51,1) 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(51,51,51,0.5)),color-stop(100%,rgba(51,51,51,1)));
+  background: -webkit-linear-gradient(top,rgba(51,51,51,0.65) 0,rgba(51,51,51,1) 100%);
+  background: -o-linear-gradient(top,rgba(51,51,51,0.65) 0,rgba(51,51,51,1) 100%);
+  background: -ms-linear-gradient(top,rgba(51,51,51,0.65) 0,rgba(51,51,51,1) 100%);
+  background: linear-gradient(to bottom,rgba(51,51,51,0.65) 0,rgba(51,51,51,1) 100%);
+}
+
+div.nav {
+	width: 270px;
+	margin: 20px auto 0 auto;
+}
+
+div.nav a {
+	color: #FFF;
+	font-size: 24px;
+}
+
+div.cover {
+	width: 100%;
+	margin: 15px auto 20px auto;
+}
+
+div.cover img {
+	height: 180px;
+	width: 180px;
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.jcarousel {
+		width: 310px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    margin: auto 45px;
+}
+
+.jcarousel-pagination {
+	display: none;
+}
+
+div.info {
+	text-align: center;
+	color: #fff;
+}
+
+div.info h3 {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+div.info h3 a {
+    color: #fff;
+}
+
+div.info p {
+	font-size: 12px;
+	color: #999;
+	margin: 7px 0;
+}
+
+div.action {
+	text-align: center;
+	margin: 20px 0;
+}
+
+div.action .previous, div.action .next {
+	font-size: 26px;
+	margin: 0 10px;
+	color: #FFF;
+}
+
+div.action .play {
+	font-size: 40px;
+	margin: 0 25px;
+	color: #FFF;
+}
+
+div.options {
+	text-align: center;
+	margin: 25px 0 35px 0;
+	display: block;
+}
+
+div.options a {
+	color: #999;
+	margin: 0 15px;
+}
+
+div.options a.active {
+	color: #e74c3c;
+}
+
+div.volume-slider {
+	text-align: center;
+	margin-top: 0px;
+	display: block;
+	height: 140px;
+	background: #303030;
+	position: absolute;
+	z-index: 97;
+	width: 100%;
+}
+
+div.volume-slider-inner {
+	padding: 60px 0 0 0;
+}
+
+div.volume-slider div.volume-slider-inner i {
+	color: #666;
+	padding: 0 6px;
+}
+
+div.length input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+div.volume-slider input[type='range'] {
+	height: 2px;
+	width: 180px;
+	background: #999;
+	-webkit-appearance: none;
+	border: none;
+	outline: 0;
+}
+
+div.volume-slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 30px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+div.volume-slider a.close {
+	position: absolute;
+	color: #DDD;
+	right: 14px;
+	top: 10px;
+	font-size: 18px;
+}
+
+div.length {
+	width: 280px;
+	margin: 20px auto;
+	color: #999;
+	font-size: 10px;
+}
+
+div.length label, div.length output {
+	position: absolute;
+	margin-top: -5px;
+}
+
+div.length output {
+	margin-left: -26px;
+}
+
+div.length label {
+	margin-left: 15px;
+}
+
+div.length input[type="range"] {
+	width: 250px;
+	margin-left: 14px;
+	-webkit-appearance: none;
+	background-color: #999;
+	height:2px;
+	border: none;
+	outline: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .0);
+}
+
+::selection {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
