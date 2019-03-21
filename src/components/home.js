@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Header from './header/header';
 import Card from './card/card';
+import Search from './search/search';
+
 import * as actions from './action/index';
 
 class Home extends Component {
@@ -19,10 +21,18 @@ class Home extends Component {
         )) 
         : null;
     }
+    searchAlbums = (term) => {
+        actions.getAlbums(term).then((item) => this.setState({
+            albums: item
+        }));
+    }
     render() {
       return (
             <div className="container">
                 <Header />
+                <div className="row mt-4 col-md-12 max-auto">
+                <Search searchAlbums={this.searchAlbums} />
+                </div>
                 <div className="row mt-4">
                     <div className="col-md-12 max-auto">
                         {this.renderAlbums()}
