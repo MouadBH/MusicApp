@@ -321,15 +321,6 @@ div.length input[type="range"] {
 	outline: 0;
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: rgba(255, 255, 255, 1);
-    background: rgba(255, 255, 255, .0);
-}
-
-::selection {
-    color: rgba(255, 255, 255, 1);
-    background: rgba(255, 255, 255, .0);
-}
 
 @keyframes fadeIn {
   0% {

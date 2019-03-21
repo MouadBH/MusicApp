@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './header/header';
 import Card from './card/card';
 import Search from './search/search';
-
+import Player from './player/player';
 import * as actions from './action/index';
 
 class Home extends Component {
@@ -28,8 +28,9 @@ class Home extends Component {
     }
     render() {
       return (
+          <div>
+            <Header />
             <div className="container">
-                <Header />
                 <div className="row mt-4 col-md-12 max-auto">
                 <Search searchAlbums={this.searchAlbums} />
                 </div>
@@ -39,6 +40,8 @@ class Home extends Component {
                     </div>
                 </div>
             </div>
+            <Player />
+          </div>
       )
     }
 }

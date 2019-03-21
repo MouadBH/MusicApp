@@ -4,8 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "cplayer": "^3.2.0",
+    "jquery": "^3.3.1",
+    "plyr": "^3.5.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-plyr": "^2.2.0",
     "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.8"
   },

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './card.css'
+import {Link} from 'react-router-dom';
 
 class Card extends Component {
     render() {
@@ -13,13 +14,9 @@ class Card extends Component {
                                     <div className="jcarousel">
                                     <ul>
                                         <li>
-                                            <img src={this.props.item.album.cover_medium} alt="" />
-                                        </li>
-                                        <li>
-                                            <img src={this.props.item.album.cover_medium} alt="" />
-                                        </li>
-                                        <li>
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/bmth-tts.jpg" alt="" />
+                                            <Link to={`/album/${this.props.item.album.id}`}>
+                                                <img src={this.props.item.album.cover_medium} alt="" />
+                                            </Link>
                                         </li>
                                     </ul>
                                     </div>
