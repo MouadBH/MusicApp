@@ -9,6 +9,8 @@
     "plyr": "^3.5.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-h5-audio-player": "^1.1.0",
+    "react-modular-audio-player": "^1.1.1",
     "react-plyr": "^2.2.0",
     "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.8"
