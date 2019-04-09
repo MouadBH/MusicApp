@@ -16,18 +16,13 @@ class Search extends Component {
         console.log(this.state)
       return (
         <form className="form-inline col-md-12 my-2 my-lg-0 " onChange={(event) => this.submitSearch(event)}>
-                <input className="form-control mr-sm-2 col-md-10" 
+                <input className="form-control mr-sm-12 col-md-12" 
                     value={this.state.term}
                     onChange={(event) => this.handleInputChange(event)} 
                     type="search" 
                     placeholder="Search" 
                     aria-label="Search" 
                 /> 
-                <button 
-                    className="btn btn-outline-success my-2 my-sm-0" 
-                    type="submit">
-                        Search 
-                </button>
         </form>
       )
     }

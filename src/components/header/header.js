@@ -15,15 +15,6 @@ const Header = () => {
                             Home <span className="sr-only">(current)</span>
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Artist</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Songs</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Favorits</a>
-                    </li>
                 </ul>
             </div>
             </nav>

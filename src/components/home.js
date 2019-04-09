@@ -17,7 +17,7 @@ class Home extends Component {
     renderAlbums = () => {
         const {albums} = this.state;
         return albums && albums.length ? albums.map((item, index) => (
-            <Card item={item} index={index} />
+            <Card item={item} index={index} key={index} />
         )) 
         : null;
     }

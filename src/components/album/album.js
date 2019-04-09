@@ -23,7 +23,7 @@ class Album extends Component {
     loadTracks = () => {
       const {tracks} = this.state;
       return tracks && tracks.length ? tracks.map((track, index) => (
-        <div className="row">
+        <div key={index} className="row">
         <div className="col-md-3">
           <h5>{track.title}</h5>
         </div>
@@ -31,7 +31,6 @@ class Album extends Component {
           <AudioPlayer
             preload="auto"
             src={track.preview}
-            key={index}
             onPlay={e => console.log("onPlay")}
             onAbort={ev => console.log("onAbort")}
             onCanPlay={evt => console.log("onCanPlay ")}
@@ -57,7 +56,7 @@ class Album extends Component {
                       <h1>{this.state.album.title} - {this.state.artist.name}</h1>
                     </div>
                     <div className="albuCover" style={{ backgroundImage: 'url(' + this.state.album.cover_medium + ')' }}>
-                    <div class="overlay"></div>
+                    <div className="overlay"></div>
                     </div>
                   </div>
                 </div>
